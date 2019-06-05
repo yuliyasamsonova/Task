@@ -6,8 +6,8 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="print.css" type="text/css" media="print" />
 </head>
-<>
-	< class="main">
+<body>
+	<div class="main">
 		<section class="totalInformation">
 			<p>Total Information</p>
 			<div class="name">Name: <input type="text" value="" required></div>
@@ -30,10 +30,12 @@
 			<div class="telegram">Telegram: <input type="text" value=""></div>
 		</section>
 		<img src="">
-		<button type="submit" class="save">OK</button>
-		<button class="print">Print page</button>
-		<button class="download">Download page</button>
-		<input  class="attach" style="opacity: 0; z-index: -1;" type="file" name="upload" id="uploadbtn">
+		<section class=buttons>
+			<button type="submit" class="save">OK</button>
+			<button class="print">Print page</button>
+			<button class="download">Download page</button>
+			<button  class="attach" type="file" name="upload" id="uploadbtn">attach</button>
+		</section>
 	</div>
 </body>
 <script src="index.js"></script>

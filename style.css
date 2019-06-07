@@ -1,39 +1,104 @@
-.main{
+@import "reset.css";
+
+*{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+form{
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
-.attach {
-    display: block;
-    width: 100px;
-    background: #3df;
-    padding: 10px;
-    color: #FFF;
-    font-size: 16px;
-    font-weight: bold;
-    font-family: Tahoma;
-    text-align: center;
-    border-radius: 10px;
-    cursor: pointer;
+input[type="file"]{
+    display: none;
 }
 
-.attach:hover {
-    background: #3ce;
+button, .button{
+    display: block;
+    background: #2fa5ff;
+    color: #FFF;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    border: none;
+    margin-right: 5px;
+
 }
-.img{
-    position: absolute;
-    margin-top: 0;
-    margin-right: 20px;
+
+.button{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+button:hover, .downloadPage:hover, .button:hover {
+    background: #2039ee;
+}
+
+img{
+    margin-bottom: 10px;
+    max-width: 158px;
+    max-height: 158px;
 }
 
 .buttons{
     display: flex;
     flex-direction: row;
+    margin-top: 20px;
+    width: 90vw;
+    justify-content: center;
 }
 
-button{
-    margin: 5px;
-    width: 150px;
-    height: 50px
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3{
+    color: red;
+    font-weight: bold;
+    margin: 25px 0;
+    width: 90vw;
+    text-align: center;
+}
+
+section div{
+    display: flex;
+    min-width: 325px;
+    width: 25vw;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 600px) {
+    *{
+        font-size: 10px;
+    }
+    section div{
+        min-width: 270px;
+    }
+    h3 {
+        margin: 10px 0;
+    }
+    .buttons{
+        margin: 5px 0;
+    }
+    button, .button{
+        width: 150px;
+        height: 40px
+    }
 }
